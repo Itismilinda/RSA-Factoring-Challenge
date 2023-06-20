@@ -1,0 +1,32 @@
+function factorize(file):
+    numbers = read_numbers_from_file(file)
+    
+    for each number in numbers:
+        factors = []
+        
+        for i from 2 to sqrt(number):
+            if number % i == 0:
+                factors.append(i)
+                factors.append(number // i)
+        
+        print_factorizations(number, factors)
+
+function read_numbers_from_file(file):
+    numbers = []
+    
+    open file
+    
+    for each line in file:
+        number = convert line to integer
+        numbers.append(number)
+    
+    close file
+    
+    return numbers
+
+function print_factorizations(number, factors):
+    for i from 0 to length(factors) step 2:
+        p = factors[i]
+        q = factors[i+1]
+        print number, "=", p, "*", q
+
