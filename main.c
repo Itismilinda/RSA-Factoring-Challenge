@@ -1,8 +1,8 @@
 #include "factors.h"
 
 /**
- * main - main function
- * Return: (void)
+ * main - main function to print results
+ * Return: (Always)
  */
 int main(int argc, char *argv[])
 {
@@ -27,5 +27,5 @@ int main(int argc, char *argv[])
 	{
 		factorizer(buffer);
 	}
-return (0);
+	return (0);
 }
